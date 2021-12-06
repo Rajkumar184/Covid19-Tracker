@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/* .container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  
+} */
+
+
+
+img{
+ 
+  
+  height: 90px;
+  border-radius: 80%;
+  background: transparent;
+  animation: rotation 3s infinite linear;
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* 
+.heading{
+  position: absolute;
+  font-size: 60px;
+  top: 5px;
+  left: 38%;
+  text-transform: capitalize;
+} */
