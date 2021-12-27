@@ -1,7 +1,7 @@
 import React from "react";
 import MaterialTable from "material-table";
 
-const CountryPicker = ({ data }) => {
+const CountryPicker = ({ covidData }) => {
 	const columns = [
 		{
 			title: "Country Name",
@@ -13,7 +13,7 @@ const CountryPicker = ({ data }) => {
 			title: "ActiveCase",
 			field: "active_cases",
 		},
-		{ title: "TotalRecovered", field: "total_recovered" },
+		{ title: "TotalRecovered", field: " total_recovered" },
 		{ title: "NewDeaths", field: "new_deaths" },
 		{ title: "TotalDeaths", field: "deaths" },
 	];
@@ -24,7 +24,7 @@ const CountryPicker = ({ data }) => {
 				<MaterialTable
 					title="Country Details"
 					columns={columns}
-					data={data}
+					data={covidData}
 				></MaterialTable>
 			</div>
 		</>

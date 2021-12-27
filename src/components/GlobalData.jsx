@@ -1,6 +1,6 @@
 import React from "react";
 
-const GlobalData = ({ globalData }) => {
+const GlobalData = ({ covidStats }) => {
 	return (
 		<>
 			<div className="container">
@@ -16,11 +16,11 @@ const GlobalData = ({ globalData }) => {
 						<div class="card my-5 text-white bg-primary text-center shadow-sm">
 							<div class="card-header ">TotalCases</div>
 							<div class="card-body">
-								<h5 class="card-title"> {globalData.total_cases}</h5>
-								<span>
+								<h5 class="card-title"> {covidStats?.total_cases}</h5>
+								{/* <span>
 									LastUpdate=
 									{new Date(globalData.statistic_taken_at).toDateString()}
-								</span>
+								</span> */}
 								<p class="card-text">Number of cases from covid19</p>
 							</div>
 						</div>
@@ -29,11 +29,11 @@ const GlobalData = ({ globalData }) => {
 						<div class="card my-5 text-white bg-success text-center shadow-sm">
 							<div class="card-header text-center">TotalRecovered</div>
 							<div class="card-body">
-								<h5 class="card-title">{globalData.total_recovered}</h5>
-								<span>
+								<h5 class="card-title">{covidStats?.total_recovered}</h5>
+								{/* <span>
 									LastUpdate=
 									{new Date(globalData.statistic_taken_at).toDateString()}
-								</span>
+								</span> */}
 								<p class="card-text">Number of recoveries from covid19</p>
 							</div>
 						</div>
@@ -42,11 +42,11 @@ const GlobalData = ({ globalData }) => {
 						<div class="card my-5 text-white bg-danger text-center shadow-sm">
 							<div class="card-header text-center">TotalDeath</div>
 							<div class="card-body">
-								<h5 class="card-title">{globalData.total_deaths}</h5>
-								<span>
+								<h5 class="card-title">{covidStats?.total_deaths}</h5>
+								{/* <span>
 									LastUpdate=
 									{new Date(globalData.statistic_taken_at).toDateString()}
-								</span>
+								</span> */}
 								<p class="card-text">Number of deaths from covid19</p>
 							</div>
 						</div>
