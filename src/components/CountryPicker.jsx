@@ -13,7 +13,7 @@ const CountryPicker = ({ covidData }) => {
 			title: "ActiveCase",
 			field: "active_cases",
 		},
-		{ title: "TotalRecovered", field: " total_recovered" },
+		{ title: "TotalRecovered", field: "total_recovered" },
 		{ title: "NewDeaths", field: "new_deaths" },
 		{ title: "TotalDeaths", field: "deaths" },
 	];
