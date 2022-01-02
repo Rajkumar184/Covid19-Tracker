@@ -5,10 +5,10 @@ const GlobalData = ({ covidStats }) => {
 		<>
 			<div className="container">
 				<div className="header">
-					<h1 align="center" className="py-4 ">
+					<h3 align="center" className="py-4 ">
 						<img src="images/Coronavirus.jpg" alt="coronaVirus" />
 						Covid19 Tracker
-					</h1>
+					</h3>
 				</div>
 
 				<div class="row">
